@@ -1,31 +1,25 @@
 {
   "intents": [
     {
+      "intent": "SavePolicyIntent",
       "slots": [
         {
           "name": "policy",
           "type": "policies"
         }
-      ],
-      "intent": "SavePolicyIntent"
+      ]
     },
     {
-      "slots": [
-        {
-          "name": "policy",
-          "type": "policies"
-        }
-      ],
-      "intent": "GetSavePolicyIntent"
+      "intent":"GetSavePolicyIntent"
     },
     {
-      "slots": [
+      "intent":"PolicyInfoIntent",
+      "slots":[
         {
-          "name": "policy",
-          "type": "policies"
+          "name":"policy",
+          "type":"policies"
         }
-      ],
-      "intent": "PolicyInfoIntent"
+      ]
     },
     {
       "intent": "AMAZON.StartOverIntent"

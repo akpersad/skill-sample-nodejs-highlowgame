@@ -2,9 +2,11 @@
 'use strict';
 var Alexa = require("alexa-sdk");
 var storage = require("./storage");
+var appId = 'amzn1.ask.skill.c94f03c8-632a-43a7-b718-7da2600f613c';
 
 exports.handler = function (event, context, callback) {
     var alexa = Alexa.handler(event, context);
+    alexa.appId = appId;
     alexa.registerHandlers(handlers);
     alexa.execute();
 
@@ -22,7 +24,7 @@ const handlers = {
 
         storage.save(policy, this.event.session, (policy) => {
             response = 'Ok, saving the ' + policy + ' policy to read later';
-            this.emit(':ask', response);
+            this.emit(':ask', JSON.stringify(this));
         });
     },
 
@@ -54,7 +56,7 @@ const handlers = {
     },
 
     'Unhandled': function () {
-        this.emit(':ask', 'Sorry, I didn\'t get that. Try saying a number.', 'Try saying a number.');
+        this.emit(':ask', 'Sorry, I didn\'t get that. What policy would you like to know about?.', 'What policy would you like to know about?');
     },
 
     'AMAZON.HelpIntent': function () {

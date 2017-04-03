@@ -16,11 +16,11 @@
     "locale": "en-US",
     "timestamp": "2017-04-03T16:38:14Z",
     "intent": {
-      "name": "PolicyInfoIntent",
+      "name": "SavePolicyIntent",
       "slots": {
         "policy": {
           "name": "policy",
-          "value": "benefits"
+          "value": "project"
         }
       }
     }
