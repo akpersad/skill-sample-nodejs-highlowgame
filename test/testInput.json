@@ -1,0 +1,29 @@
+{
+  "session": {
+    "sessionId": "SessionId.6dc3a63a-7445-466a-a97d-383357a7628f",
+    "application": {
+      "applicationId": "amzn1.ask.skill.c94f03c8-632a-43a7-b718-7da2600f613c"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AHVUK66OQ7R47YSU3HWHA2XLQC4MML5WTS3D73YB3BY6JZ2S2S5ZGLJH7E2R5B7WKLJ7BR5QMREVDXQG6GYKZXQ64S7FWDISVHV5JZPKQFMKVM5KCOBTVK5Z4GGYOSWMU3JSQUTPSW6P3HIYZOOE3BNRE2R7JL2CE7ZJZZAI67FYWQ3QOUSBNMDDKPX4Z4PWZDOZU6HVGT3PDVQ"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.f0b2ad37-38cb-4263-a84e-8766aa7f8def",
+    "locale": "en-US",
+    "timestamp": "2017-04-03T16:38:14Z",
+    "intent": {
+      "name": "PolicyInfoIntent",
+      "slots": {
+        "policy": {
+          "name": "policy",
+          "value": "benefits"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
